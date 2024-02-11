@@ -10,6 +10,8 @@ def main():
         "stream-audio-output.aac", "match_start.wav", 2, 0
     )
     name_index = 0
+    # for each start index, clip out a video starting at that time
+    # TODO: change this name to use matches or something more useful
     for time in times:
         clip_out_videos.clip_out_videos(
             "test-stream.mp4", "output" + str(name_index) + ".mp4", time, time + 165

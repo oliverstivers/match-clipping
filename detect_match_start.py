@@ -5,6 +5,8 @@ import numpy as np
 import scipy
 import time
 
+
+# detects the start indexes of match start sound in input_file, returns the start indexes in seconds, outputting an array of start indexes
 # pass in start time to appropriately calculate the offset with an audio file that doesn't start when the stream
 # for example, if you clip the audio file starting at 300 seconds, pass in 300 seconds to start to apporpirately calulate the offsets
 def find_offsets(within_file, find_file, window, start):
