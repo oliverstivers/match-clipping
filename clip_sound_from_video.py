@@ -12,7 +12,9 @@ def extract_audio(input_file, output_file, start_seconds=0):
         str(start_seconds),
         "-vn",
         "-acodec",
-        "copy",
+        "pcm_s16le",
         output_file,
     ]
     subprocess.run(command, check=True)
+
+
