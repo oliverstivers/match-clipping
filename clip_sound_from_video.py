@@ -12,9 +12,12 @@ def extract_audio(input_file, output_file, start_seconds=0):
         str(start_seconds),
         "-vn",
         "-acodec",
-        "pcm_s16le",
+        "libmp3lame",
         output_file,
     ]
     subprocess.run(command, check=True)
+
+
+
 
 
